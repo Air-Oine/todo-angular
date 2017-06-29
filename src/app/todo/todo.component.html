@@ -1,0 +1,6 @@
+<p>
+  <span [ngStyle]="{'text-decoration': getTextDecoration()}">
+    {{todo.title | uppercase}}
+  </span>
+  <input type="checkbox" [(ngModel)]="todo.isDone" />
+</p>

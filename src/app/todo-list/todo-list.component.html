@@ -1,0 +1,9 @@
+<!--Length of todo list-->
+<p>Nombre d'éléments présents dans la liste : {{todoList.length}}</p>
+
+<!--Todo list-->
+<ul>
+    <li *ngFor="let todo of todoList">
+      <app-todo [todo]="todo"></app-todo>
+    </li>
+</ul>
